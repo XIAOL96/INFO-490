@@ -1,0 +1,29 @@
+
+# Return True only if the number is even
+def is_even(num):
+  if num %2 ==0:
+    return True
+  return False
+
+# Return True only if all elements in a list are even
+def all_even(list_of_numbers):
+  if list_of_numbers == []:
+    return True
+  count1 = 0
+  for number in list_of_numbers:
+    if is_even(number) == True:
+      count1 += 1
+  if count1 == len(list_of_numbers):
+    return True
+  else:
+    return False
+        
+# Count the number of even numbers in a list
+def count_even(list_of_numbers):
+  count1 = 0
+  for number in list_of_numbers:
+    if is_even(number) == True:
+      count1 += 1
+  return count1 
+      
+ 
